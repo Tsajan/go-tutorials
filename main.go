@@ -83,4 +83,24 @@ func main() {
 	fmt.Println("---------Calling fn MatrixScalarProduct() from the tutorials package!--------")
 	tutorials.MatrixScalarProduct()
 
+	fmt.Println("---------Calling fn StructExportsDemo() from the tutorials package!-----------")
+	tutorials.StructExportsDemo()
+	// also we can initlize the Bicycle struct that was exported, but we don't get the price
+	b2 := tutorials.Bicycle{Model: "Trek Excalibur", ReleaseYear: 2024}
+	fmt.Println("Exported Bicycle b2 is: ", b2)
+
+	// structs are passed by value (unless of course we use reference operators)
+	// so changing a value of an element of original struct object doesn't essentially alter the original struct
+	b3 := b2
+	b3.Model = "Trek Excalibur II"
+
+	fmt.Println("Original struct b2 is still: ", b2)
+	fmt.Println("Copied and updated struct b3 is: ", b3)
+
+	fmt.Println("--------------Calling fn AnonymousFnCalls() from the tutorials package!-------------")
+	tutorials.AnonymousFnCall()
+
+	fmt.Println("Separately just printing ExportedVar within the AnonymousFnCall()")
+	fmt.Println("ExportedVar circum-navigated is: ", tutorials.ExportedVar)
+
 }
