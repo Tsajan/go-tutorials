@@ -103,4 +103,16 @@ func main() {
 	fmt.Println("Separately just printing ExportedVar within the AnonymousFnCall()")
 	fmt.Println("ExportedVar circum-navigated is: ", tutorials.ExportedVar)
 
+	fmt.Println("------------Calling Fn ClosureDemo() from the tutorials package!---------------")
+	tutorials.ClosureDemo()
+
+    fmt.Println("------------Calling Fn MethodsDemo() from the tutorials package!---------------")
+    tutorials.MethodsDemo()
+
+    fmt.Println("------------Calling Fn MethodsWithFnAsReceiversDemo() from the tutorials package!-----------")
+    tutorials.MethodsWithFnAsReceiversDemo()
+
+    fmt.Println("------------Calling Fn ObjectEmbeddingDemo() from the tutorials package!---------------")
+    tutorials.ObjectEmbeddingDemo()
+
 }
