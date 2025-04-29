@@ -106,13 +106,16 @@ func main() {
 	fmt.Println("------------Calling Fn ClosureDemo() from the tutorials package!---------------")
 	tutorials.ClosureDemo()
 
-    fmt.Println("------------Calling Fn MethodsDemo() from the tutorials package!---------------")
-    tutorials.MethodsDemo()
+	fmt.Println("------------Calling Fn MethodsDemo() from the tutorials package!---------------")
+	tutorials.MethodsDemo()
 
-    fmt.Println("------------Calling Fn MethodsWithFnAsReceiversDemo() from the tutorials package!-----------")
-    tutorials.MethodsWithFnAsReceiversDemo()
+	fmt.Println("------------Calling Fn MethodsWithFnAsReceiversDemo() from the tutorials package!-----------")
+	tutorials.MethodsWithFnAsReceiversDemo()
 
-    fmt.Println("------------Calling Fn ObjectEmbeddingDemo() from the tutorials package!---------------")
-    tutorials.ObjectEmbeddingDemo()
+	fmt.Println("------------Calling Fn ObjectEmbeddingDemo() from the tutorials package!---------------")
+	tutorials.ObjectEmbeddingDemo()
+
+	fmt.Println("------------Calling Fn computeStableMatching() from the tutorials package!-------")
+	tutorials.ComputeStableMatching()
 
 }
