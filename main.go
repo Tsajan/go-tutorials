@@ -56,6 +56,9 @@ func main() {
 	fmt.Println("--------Calling fn FnCallsWithArrayPointers() from tutorials package!---------")
 	tutorials.FnCallsWithArrayPointers()
 
+	fmt.Println("Calling fn ExecuteMethodsWithPointers() from tutorials package!")
+	tutorials.ExecuteMethodsWithPointers()
+
 	fmt.Println("---------Calling fn FnCallWithArray() from the tutorials package!--------")
 	// tutorials.InfiniteForLoop() // commenting out because I don't want to be stuck in this infinite loop
 
@@ -115,7 +118,13 @@ func main() {
 	fmt.Println("------------Calling Fn ObjectEmbeddingDemo() from the tutorials package!---------------")
 	tutorials.ObjectEmbeddingDemo()
 
-	fmt.Println("------------Calling Fn computeStableMatching() from the tutorials package!-------")
-	tutorials.ComputeStableMatching()
+	fmt.Println("------------Interface Example; calling RunInterfaceExample() ------------------")
+	tutorials.RunInterfaceExample()
+
+	fmt.Println("--------------Interface with Multiple Methods; calling InterfaceWithMultipleMethodsDemo() ---------------")
+	tutorials.InterfaceWithMultipleMethodsDemo()
+
+	// fmt.Println("------------Calling Fn computeStableMatching() from the tutorials package!-------")
+	// tutorials.ComputeStableMatching()
 
 }
